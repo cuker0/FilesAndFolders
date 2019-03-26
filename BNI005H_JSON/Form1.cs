@@ -70,7 +70,7 @@ namespace BNI005H_JSON
 
             WebClient wc = new WebClient();
 
-           string json = await wc.DownloadStringTaskAsync(new Uri("http://192.168.10.100/dprop.jsn"));
+           string json = await wc.DownloadStringTaskAsync(new Uri("http://81.168.130.85:6566/ports.jsn"));
 
             DeviceState[] jsonDB = JsonConvert.DeserializeObject<DeviceState[]>(json);
 
